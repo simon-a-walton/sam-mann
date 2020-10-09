@@ -45,7 +45,7 @@ const Banner = () => (
         </ul>
       </Col>
        <Fade delay={4500}>
-      <div className="container mt-5 p-5">
+      <div className="container mt-5 p-5 mb-3">
         <h4 style={{fontSize:'calc(12px + 1vw)'}}>
           You are in control of so much more than you think you are. <span className=""> Changes in lifestyle and attitude can reap great rewards...</span>
         </h4>

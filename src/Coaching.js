@@ -33,7 +33,7 @@ const Coaching = () => (
               </li>
             </ul>
 
-            <h2>Areas of Expertise</h2>
+            <h3>Areas of Expertise</h3>
             <ul className="cards-list fa-ul">
               <li>
                 <span className="fa-li make-green">
