@@ -1,0 +1,47 @@
+$dark-purple: #360A53;
+$light-purple: #D1C6FE;
+$purple: #815BB8;
+$green: #84DD7C;
+
+/*BANNER*/
+.banner-bg {
+  position: relative;
+}
+
+.banner-text {
+  font-size: 4rem;
+  line-height: 0.9;
+  text-align: center;
+}
+
+#contact-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: $purple;
+  border-radius: 4px;
+  padding: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  &:hover {
+      background-color: $green;
+      text-decoration: none;
+  }
+}
+
+
+.make-bg-purple {
+  color: white;
+  padding:4px;
+  background-color: $purple;
+}
+
+.make-dark-purple {
+  color: $dark-purple;
+}
+
+ .make-light-purple {
+    color: $light-purple;
+  }

@@ -1,0 +1,61 @@
+$dark-purple: #360A53;
+$light-purple: #D1C6FE;
+$purple: #815BB8;
+$green: #84DD7C;
+
+/*ABOUT*/
+
+.about-list {
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.about-list li {
+  display:inline;
+  padding-right: 50px;
+  font-size: 24px;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+
+.iin-logo {
+  width: 160px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.ukhc-logo {
+  width: 160px;
+  background-color: white;
+  padding: 8px;
+   border-radius: 8px;
+}
+
+.bg-badges {
+  background-color: $dark-purple;
+}
+
+.logo-list {
+  border: 8px solid white;
+}
+
+.logo-list li {
+    display: inline;
+    margin: 12px;
+}
+
+/*FAST TEXT*/
+
+.fast-text-bg {
+ color: white;
+}
+
+#map {
+  width: 600px;
+  height: 400px;
+  position: relative;
+}

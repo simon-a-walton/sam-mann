@@ -1,0 +1,39 @@
+/*CONTACT*/
+$dark-purple: #360A53;
+$light-purple: #D1C6FE;
+$purple: #815BB8;
+$green: #84DD7C;
+
+.mapContainer {
+  width: 350px;
+  height: 350px;
+
+}
+
+.contact-list li {
+  padding-top: 8px;
+}
+
+.contact-list {
+  color: $dark-purple;
+  font-weight: 500;
+  padding: 40px;
+  a {
+    text-decoration: none;
+    color: $dark-purple;
+  }
+  a:hover {
+    color: $green;
+  }
+}
+
+// .marker {
+//   background-image: url('./../images/map-pin-solid.svg');
+//   background-size: cover;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   cursor: pointer;
+//   color: $purple;
+// }
+

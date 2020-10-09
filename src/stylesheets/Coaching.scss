@@ -1,0 +1,23 @@
+$dark-purple: #360A53;
+$light-purple: #D1C6FE;
+$purple: #815BB8;
+$green: #84DD7C;
+
+/*COACHING*/
+
+.coaching-container {
+  background-color: $dark-purple;
+  color: white;
+  position: relative;
+}
+
+
+#contact-image img {
+  padding-top: 40px;
+  width: 80%;
+}
+
+.cards-list {
+  padding: 20px;
+  font-size: 20px;
+}

@@ -1,0 +1,174 @@
+@import './stylesheets/Navbar-section.scss';
+@import './stylesheets/Banner.scss';
+@import './stylesheets/Coaching.scss';
+@import './stylesheets/About.scss';
+@import './stylesheets/Footer.scss';
+@import './stylesheets/Cards.scss';
+@import './stylesheets/Contact.scss';
+@import './stylesheets/Intro.scss';
+
+$dark-purple: #360A53;
+$light-purple: #D1C6FE;
+$purple: #815BB8;
+$green: #84DD7C;
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  margin-right: none !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+#root {
+  height: 100%;
+}
+
+.container-layout {
+  padding-top: 80px !important;
+  min-height: 600px;
+}
+
+.header-section {
+  padding: 20px 50px;
+}
+
+/* MOBILE Responsiveness*/
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 720px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .bg-banner h1 {
+    font-size: 2rem;
+  }
+
+  .header-section {
+  padding: 20px 35px;
+}
+
+
+  .card-container h4 {
+    font-size: 20px;
+  }
+
+  ul#menu li {
+    display:inline;
+    margin-right: 4px;
+    font-size: 4px;
+  }
+
+  .navbar-light .navbar-brand {
+    font-size: 16px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  .navbar-toggler {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    line-height: 0;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  }
+
+  .social-media li {
+    display: inline;
+    margin: 0 8px;
+  }
+
+  #logo-name a {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  .footer-col {
+    display: none;
+  }
+
+  .footer-text p {
+    font-size: 10px;
+  }
+
+  .banner-text {
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 3rem;
+  }
+
+  .bg-banner {
+    height: 500px;
+  }
+
+  .about-list {
+    margin-left: 45px;
+    margin-top: 25px;
+  }
+
+
+  #contact-button {
+  font-size: 16px;
+  }
+
+ .contact-list {
+    font-size: 12px;
+    padding: 20px;
+  }
+
+  .sam-img {
+    padding-bottom: 16px;
+  }
+
+  #coach-img {
+    display: none;
+  }
+
+  .ukhc-logo {
+    width: 100px;
+  }
+
+   .iin-logo {
+    width: 100px;
+  }
+
+  #accreditation-text {
+  display: flex;
+  justify-content: center;
+}
+
+  .mapContainer {
+    width: 250px;
+    height: 250px;
+  }
+
+  .mobile-text {
+    font-size: 30px;
+  }
+
+  #contact-image img {
+    display: none;
+  }
+
+  .cards-list {
+    padding-left: 0;
+  }
+
+  #coaching-list .fa-ul {
+    margin: 0;
+  }
+}
+
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+}

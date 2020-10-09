@@ -1,0 +1,53 @@
+$dark-purple: #360A53;
+$light-purple: #D1C6FE;
+$purple: #815BB8;
+$green: #84DD7C;
+
+/*FOOTER*/
+
+.bg-dark-purple {
+  background-color: $dark-purple;
+  color: white;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.footer-copyright {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+    a:hover {
+    font-weight:800;
+    }
+}
+
+.footer-text {
+  font-size: 75%;
+}
+
+.make-purple {
+  color: $purple;
+}
+
+.social-media {
+
+  color: $purple;
+    li {
+      display: inline;
+      margin: 0 12px;
+    }
+    a {
+      text-decoration: none;
+      color: $purple;
+    }
+      a:hover {
+        color: $green;
+      }
+}
+
+

@@ -1,0 +1,116 @@
+$dark-purple: #360A53;
+$light-purple: #D1C6FE;
+$purple: #815BB8;
+$green: #84DD7C;
+
+/*NAV BAR*/
+
+header {
+  position: sticky;
+  top:0;
+  transition:0.3s;
+  background-color: white;
+  }
+
+.navbar {
+  padding: 0.5rem 0.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  text-decoration: none;
+  color: $dark-purple;
+  transition:0.5s;
+  margin: 0 8px;
+  font-size: 20px;
+
+&:hover {
+  color: $green;
+  text-decoration: none;
+
+  }
+}
+
+button:focus {
+  outline: 5px auto $green;
+}
+
+.navbar-light .navbar-brand {
+  color: $purple;
+  font-weight: bold;
+  &:hover {
+    color: $purple;
+  }
+}
+
+
+#header a {
+  color: $purple;
+}
+
+header.green {
+  padding: 8px 12px;
+  background-color: rgba(132, 221, 124, 0.95);
+  z-index: 1;
+    .navbar-light .navbar-nav .nav-link {
+    color: white;
+    transition:0.3s;
+    }
+      a:hover {
+        color: $dark-purple;
+        text-decoration: none;
+        font-weight: 500;
+      }
+    .navbar-light .navbar-brand {
+      color: white;
+      font-weight: bold;
+    }
+    #contact-button {
+      background-color: rgba(132, 221, 124, 0.05);
+      border-radius: 0px;
+      font-weight: 500;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: $dark-purple;
+    border-color: $purple;
+}
+
+ul#logo-name li {
+  display:inline;
+}
+
+#logo-name a {
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+ul#menu li {
+  display:inline;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-size: 24px;
+}
+
+.navbar .in .nav li {
+   display: block;
+   float: none;
+   width:100%;
+}
+
+
+.fas.fa-angle-up {
+  font-size: 24px;
+
+}
+
+.menu-option:hover {
+  .fas.fa-angle-up {
+     transform: rotate(180deg);
+  }
+}
+
+.fas.fa-angle-up {
+     transition: transform 0.3s ease 0s;
+}
