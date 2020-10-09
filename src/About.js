@@ -42,7 +42,7 @@ const About = () => (
       </a>
     </div>
   </Row>
-  <div className="text-center p-3" style={{fontSize:'calc(16px + 1.25vw)'}}>
+  <div className="text-center p-5" style={{fontSize:'calc(16px + 1.25vw)'}}>
       <span style={{fontWeight:'700'}}>"Real Health Matters</span> now. Back to basics, back to nature, back to balance".
     </div>
     </div>
