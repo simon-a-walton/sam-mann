@@ -26,7 +26,7 @@ const App = () => (
 
 
      <Fade>
-      <section id="why-coaching?" >
+      <section id="health-coaching" >
         <Container fluid className="container-layout coaching-container" >
           <Coaching />
         </Container>

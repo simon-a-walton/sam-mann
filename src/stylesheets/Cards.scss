@@ -35,14 +35,15 @@ $green: #84DD7C;
     -webkit-transform: rotate(360deg);
 }
 
-
-
 @keyframes bounce {
   0%   {left:0px; top:0px;}
   50%  {left:0px; top:8px;}
   100% {left:0px; top:0px;}
 }
 
+.card {
+  padding: 12px;
+}
 
 .make-green {
   color: $green;

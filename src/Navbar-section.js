@@ -18,7 +18,7 @@ class NavbarSection extends React.Component {
   }
 
   render() {
-    const pages = ['Why Coaching?', 'Work With Me', 'About', 'Contact'];
+    const pages = ['Health Coaching', 'Work With Me', 'About', 'Contact'];
 
     const turnToTag = (title) => {
       return (title.toLowerCase().split(" ").join('-'));

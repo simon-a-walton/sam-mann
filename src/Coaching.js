@@ -10,7 +10,7 @@ const Coaching = () => (
   <Row>
     <Col>
       <div className="header-section">
-        <Header headerText="Why Coaching?" />
+        <Header headerText="Health Coaching" />
           <div id="coaching-list">
             <ul className="fa-ul cards-list">
               <li>
@@ -33,21 +33,23 @@ const Coaching = () => (
               </li>
             </ul>
 
-            <h3>Areas of Expertise</h3>
-            <ul className="cards-list fa-ul">
-              <li>
-                <span className="fa-li make-green">
-                  <i class="fas fa-check-circle" />
-                </span>
-                <Content contentText="Menstrual Disorders" />
-              </li>
-              <li>
-                <span className="fa-li make-green">
-                  <i class="fas fa-check-circle" />
-                </span>
-                <Content contentText="Weight Management" />
-              </li>
-            </ul>
+              <h3>Areas of Expertise</h3>
+              <div id="expertise">
+              <ul className="cards-list fa-ul">
+                <li>
+                  <span className="fa-li make-green">
+                    <i class="fas fa-check-circle" />
+                  </span>
+                  <Content contentText="Menstrual Disorders" />
+                </li>
+                <li>
+                  <span className="fa-li make-green">
+                    <i class="fas fa-check-circle" />
+                  </span>
+                  <Content contentText="Weight Management" />
+                </li>
+              </ul>
+            </div>
           </div>
       </div>
     </Col>

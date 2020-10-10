@@ -34,22 +34,22 @@ const Banner = () => (
       <Col md={{ span: 8, offset: 2 }} className="pt-5">
 
 
-        <ul className="list-unstyled text-center pt-5">
+        <ul className="banner-list list-unstyled text-center">
           <Fade>
-          <li><h1 style={{fontWeight:'700'}}><span style={{fontSize:'calc(16px + 4vw)'}} className="make-light-purple">You</span> are amazing.</h1></li>
+          <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className="make-light-purple">You</span> are amazing.</h1></li>
           </Fade>
             <Fade delay={1500}>
-          <li><h1 style={{fontWeight:'700'}}><span style={{fontSize:'calc(16px + 4vw)'}} className="make-green">Your body</span> is amazing.</h1></li>
+          <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className="make-green">Your body</span> is amazing.</h1></li>
            </Fade>
             <Fade delay={3000}>
-          <li><h1 style={{fontWeight:'700'}}>...But why don’t you feel amazing?</h1></li>
+          <li><h1>...But why don’t you feel amazing?</h1></li>
            </Fade>
         </ul>
       </Col>
        <Fade delay={4500}>
       <div className="container p-5 mb-3">
         <h4>
-          You are in control of so much more than you think you are. <span className=""> Changes to your lifestyle and attitude can reap great rewards...</span>
+          You are in control of more than you think you are. <span className=""> Changing your lifestyle can reap great rewards...</span>
         </h4>
       </div>
       </Fade>

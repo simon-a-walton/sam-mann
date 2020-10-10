@@ -88,6 +88,10 @@ p {
     font-size: 20px;
   }
 
+  .header-section {
+    padding: 15px 25px;
+  }
+
   ul#menu li {
     display:inline;
     margin-right: 4px;
@@ -190,12 +194,21 @@ p {
     padding-left: 0;
   }
 
-  #coaching-list .fa-ul {
-    margin: 0;
-  }
+
 
   .cards-list li .fa-li {
     padding-right: 0;
+  }
+
+
+  .banner-list {
+    padding-top: 60px;
+  }
+
+  #expertise {
+    display: flex;
+    justify-content: center;
+
   }
 
 }

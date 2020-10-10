@@ -26,8 +26,8 @@ $green: #84DD7C;
   font-weight: bold;
   transition: 0.3s;
   &:hover {
-      background-color: $purple;
       text-decoration: none;
+      padding: 12px;
   }
 }
 
@@ -42,6 +42,11 @@ $green: #84DD7C;
   color: $dark-purple;
 }
 
- .make-light-purple {
+.make-light-purple {
     color: $light-purple;
-  }
+}
+
+.banner-list li h1 {
+  font-weight: 700;
+
+}
