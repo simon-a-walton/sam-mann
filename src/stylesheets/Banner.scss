@@ -18,7 +18,7 @@ $green: #84DD7C;
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: $purple;
+  background-color: $green;
   border-radius: 4px;
   padding: 8px;
   color: white;
@@ -26,7 +26,7 @@ $green: #84DD7C;
   font-weight: bold;
   transition: 0.3s;
   &:hover {
-      background-color: $green;
+      background-color: $purple;
       text-decoration: none;
   }
 }

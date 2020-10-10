@@ -32,22 +32,24 @@ const Banner = () => (
     </Bounce>
     <Row>
       <Col md={{ span: 8, offset: 2 }} className="pt-5">
-        <ul className="list-unstyled text-center intro-text" style={{fontSize:'calc(16px + 3vw)', fontWeight:'700'}}>
+
+
+        <ul className="list-unstyled text-center pt-5">
           <Fade>
-          <li><span className="make-light-purple">You</span> are amazing.</li>
+          <li><h1 style={{fontWeight:'700'}}><span style={{fontSize:'calc(16px + 4vw)'}} className="make-light-purple">You</span> are amazing.</h1></li>
           </Fade>
             <Fade delay={1500}>
-          <li><span className="make-green">Your body</span> is amazing.</li>
+          <li><h1 style={{fontWeight:'700'}}><span style={{fontSize:'calc(16px + 4vw)'}} className="make-green">Your body</span> is amazing.</h1></li>
            </Fade>
             <Fade delay={3000}>
-          <li>...So why don’t you feel amazing?</li>
+          <li><h1 style={{fontWeight:'700'}}>...But why don’t you feel amazing?</h1></li>
            </Fade>
         </ul>
       </Col>
        <Fade delay={4500}>
       <div className="container p-5 mb-3">
-        <h4 style={{fontSize:'calc(12px + 1vw)'}}>
-          You are in control of so much more than you think you are. <span className=""> Changes in lifestyle and attitude can reap great rewards...</span>
+        <h4>
+          You are in control of so much more than you think you are. <span className=""> Changes to your lifestyle and attitude can reap great rewards...</span>
         </h4>
       </div>
       </Fade>

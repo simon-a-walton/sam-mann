@@ -23,6 +23,26 @@ body {
   font-weight: 300;
 }
 
+h1 {
+  font-size: calc(12px + 3vw);
+}
+
+h2 {
+  font-size: calc(12px + 1.5vw);
+}
+
+h3 {
+  font-size: calc(12px + 1.15vw);
+}
+
+h4 {
+  font-size: calc(12px + 1vw);
+}
+
+p {
+  font-size: calc(16px + 0.3vw);
+}
+
 #root {
   height: 100%;
 }
@@ -43,16 +63,28 @@ body {
   and (max-width: 720px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-  .bg-banner h1 {
-    font-size: 2rem;
+
+   h1 {
+  font-size: 32px;
   }
 
-  .header-section {
-  padding: 20px 35px;
-}
+  h2 {
+    font-size: 30px;
+  }
 
+  h3 {
+    font-size: 22px;
+  }
 
-  .card-container h4 {
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .mobile-text {
     font-size: 20px;
   }
 
@@ -149,9 +181,6 @@ body {
     height: 250px;
   }
 
-  .mobile-text {
-    font-size: 20px;
-  }
 
   #contact-image img {
     display: none;
@@ -165,6 +194,9 @@ body {
     margin: 0;
   }
 
+  .cards-list li .fa-li {
+    padding-right: 0;
+  }
 
 }
 

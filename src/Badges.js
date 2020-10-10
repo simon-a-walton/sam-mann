@@ -6,15 +6,16 @@ import Container from 'react-bootstrap/Container';
 
 const Badges = () => {
   const containerStyle = {
-    maxWidth: 800,
-    margin: '0 auto'
+    maxWidth: 900,
+    margin: '0 auto',
+    padding: 25
   }
 
   return (
     <Container style={containerStyle}>
       <Row className="text-center text-white py-3">
         <Col id="accreditation-text" sm="12" md="3" className="text-center pt-3">
-          <h4 className="pb-sm-3 pt-lg-5 pt-md-5 pt-sm-1 text-center"><strong>Accreditations</strong></h4>
+          <p style={{fontSize: 25, fontWeight: 500}}className="pb-sm-3 pt-lg-5 pt-md-5 pt-sm-1 text-center"><strong>Accreditations</strong></p>
         </Col>
         <Col xs="6" sm="6" md="3">
           <a href="https://www.ukhealthcoaches.com/england/liss/health-coach/samantha-mann" rel="noopener noreferrer" target="_blank">
