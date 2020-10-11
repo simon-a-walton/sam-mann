@@ -2,11 +2,11 @@ import React from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Header from './Header';
-import Content from './Content';
-import CardLayout from './Card-layout';
+import Header from './../components/Header';
+import Content from './../components/Content';
+import CardLayout from './../components/Card-layout';
 
-class Cards extends React.Component {
+class HowItWorks extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -74,4 +74,4 @@ class Cards extends React.Component {
   }
 }
 
-export default Cards;
+export default HowItWorks;

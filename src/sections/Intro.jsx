@@ -36,20 +36,17 @@ class Intro extends React.Component {
       }
     return (
       <>
-      {renderList}
-      <Fade delay={4500}>
-      <div className="container p-5">
-        <h4>
-          You are in control of so much more than you think you are! You are not destined to feel unwell or suffer ailments because of your genes or 'bad luck'. So many of the most prevalent chronic diseases are avoidable. <span className="make-purple"> Changes in lifestyle can reap great rewards.</span>
-        </h4>
-      </div>
-      </Fade>
+        {renderList}
+        <Fade delay={4500}>
+          <div className="container p-5">
+            <h4>
+              You are in control of so much more than you think you are! You are not destined to feel unwell or suffer ailments because of your genes or 'bad luck'. So many of the most prevalent chronic diseases are avoidable. <span className="make-purple"> Changes in lifestyle can reap great rewards.</span>
+            </h4>
+          </div>
+        </Fade>
       </>
-      )
+    )
   }
-
-
-
 }
 
 export default Intro;

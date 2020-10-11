@@ -3,7 +3,7 @@
 @import './stylesheets/Coaching.scss';
 @import './stylesheets/About.scss';
 @import './stylesheets/Footer.scss';
-@import './stylesheets/Cards.scss';
+@import './stylesheets/How-it-works.scss';
 @import './stylesheets/Contact.scss';
 @import './stylesheets/Intro.scss';
 
@@ -63,9 +63,8 @@ p {
   and (max-width: 720px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-
-   h1 {
-  font-size: 32px;
+  h1 {
+    font-size: 32px;
   }
 
   h2 {
@@ -84,129 +83,9 @@ p {
     font-size: 16px;
   }
 
-  .mobile-text {
-    font-size: 20px;
-  }
-
   .header-section {
     padding: 15px 25px;
   }
-
-  ul#menu li {
-    display:inline;
-    margin-right: 4px;
-    font-size: 4px;
-  }
-
-  .navbar-light .navbar-brand {
-    font-size: 16px;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    font-size: 14px;
-  }
-
-  .navbar-toggler {
-    padding: 0.5rem;
-    font-size: 0.5rem;
-    line-height: 0;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-  }
-
-  .social-media li {
-    display: inline;
-    margin: 0 8px;
-  }
-
-  #logo-name a {
-    font-size: 12px;
-    font-weight: bold;
-    margin-right: 8px;
-  }
-
-  .footer-col {
-    display: none;
-  }
-
-  .footer-text p {
-    font-size: 10px;
-  }
-
-  .banner-text {
-    border-radius: 8px;
-    padding: 12px 0;
-    font-size: 3rem;
-  }
-
-  .bg-banner {
-    height: 500px;
-  }
-
-  .about-list {
-    margin-left: 45px;
-    margin-top: 25px;
-  }
-
-
-  #contact-button {
-  font-size: 16px;
-  }
-
- .contact-list {
-    font-size: 12px;
-    padding: 20px;
-  }
-
-  .sam-img {
-    padding-bottom: 16px;
-  }
-
-  #coach-img {
-    display: none;
-  }
-
-  .ukhc-logo {
-    width: 100px;
-  }
-
-   .iin-logo {
-    width: 100px;
-  }
-
-  #accreditation-text {
-  display: flex;
-  justify-content: center;
-}
-
-  .mapContainer {
-    width: 250px;
-    height: 250px;
-  }
-
-
-  #contact-image img {
-    display: none;
-  }
-
-  .cards-list {
-    padding-left: 0;
-  }
-
-
-
-  .cards-list li .fa-li {
-    padding-right: 0;
-  }
-
-
-  .banner-list {
-    padding-top: 60px;
-  }
-
-
-
 }
 
 

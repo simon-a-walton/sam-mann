@@ -1,8 +1,8 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Header from './Header';
-import Content from './Content';
+import Header from './../components/Header';
+import Content from './../components/Content';
 
 
 const Coaching = () => (
@@ -17,19 +17,19 @@ const Coaching = () => (
                 <span className="fa-li make-green">
                   <i class="fas fa-carrot" />
                 </span>
-                  <Content contentText="We all know what we 'should' be doing; drinking more water and less alcohol, taking more exercise and eating more vegetables and less sugar. However, the information given to us can still be confusing." />
+                <Content contentText="We all know what we 'should' be doing; drinking more water and less alcohol, taking more exercise and eating more vegetables and less sugar. However, the information given to us can still be confusing." />
               </li>
               <li>
                 <span className="fa-li make-green">
                   <i class="fas fa-people-carry" />
                 </span>
-                  <Content contentText="It helps to have a plan of action, unique to you and your circumstances. Health coaching acts as a guiding hand and provides you with a clear, detailed plan alongside dedicated support to help you get the results you want." />
+                <Content contentText="It helps to have a plan of action, unique to you and your circumstances. Health coaching acts as a guiding hand and provides you with a clear, detailed plan alongside dedicated support to help you get the results you want." />
               </li>
               <li>
                 <span className="fa-li make-green">
                   <i class="fas fa-heart" />
                 </span>
-                  <Content contentText="Your health is worth investing your time in. To not do so is a false economy, even if much of your life is spent looking after others or working, you will not be able to give anybody else your best if you are not feeling your best." />
+                <Content contentText="Your health is worth investing your time in. To not do so is a false economy, even if much of your life is spent looking after others or working, you will not be able to give anybody else your best if you are not feeling your best." />
               </li>
             </ul>
 
@@ -40,7 +40,7 @@ const Coaching = () => (
                   <span className="fa-li make-green">
                     <i class="fas fa-check-circle" />
                   </span>
-                  <Content contentText="Menstrual Disorders" />
+                <Content contentText="Menstrual Disorders" />
                 </li>
                 <li>
                   <span className="fa-li make-green">

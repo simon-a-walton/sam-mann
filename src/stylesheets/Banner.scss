@@ -1,9 +1,3 @@
-$dark-purple: #360A53;
-$light-purple: #D1C6FE;
-$purple: #815BB8;
-$green: #84DD7C;
-
-/*BANNER*/
 .banner-bg {
   position: relative;
 }
@@ -31,7 +25,6 @@ $green: #84DD7C;
   }
 }
 
-
 .make-bg-purple {
   color: white;
   padding:4px;
@@ -49,4 +42,24 @@ $green: #84DD7C;
 .banner-list li h1 {
   font-weight: 700;
 
+}
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 720px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .banner-text {
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 3rem;
+  }
+
+  .bg-banner {
+    height: 500px;
+  }
+
+  .banner-list {
+    padding-top: 60px;
+  }
 }

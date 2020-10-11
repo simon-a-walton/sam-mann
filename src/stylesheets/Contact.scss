@@ -1,13 +1,6 @@
-/*CONTACT*/
-$dark-purple: #360A53;
-$light-purple: #D1C6FE;
-$purple: #815BB8;
-$green: #84DD7C;
-
 .mapContainer {
   width: 350px;
   height: 350px;
-
 }
 
 .contact-list li {
@@ -37,3 +30,30 @@ $green: #84DD7C;
 //   color: $purple;
 // }
 
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 720px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #coach-img {
+    display: none;
+  }
+
+  #contact-button {
+    font-size: 16px;
+  }
+
+  .contact-list {
+    font-size: 12px;
+    padding: 20px;
+  }
+
+  .mapContainer {
+    width: 250px;
+    height: 250px;
+  }
+
+  #contact-image img {
+    display: none;
+  }
+}

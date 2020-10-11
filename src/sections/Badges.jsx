@@ -36,8 +36,6 @@ const Badges = () => {
           </a>
         </Col>
       </Row>
-
-
     </Container>
   )
 }

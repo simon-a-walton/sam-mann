@@ -1,10 +1,3 @@
-$dark-purple: #360A53;
-$light-purple: #D1C6FE;
-$purple: #815BB8;
-$green: #84DD7C;
-
-/*ABOUT*/
-
 .about-list {
   margin-left: 90px;
   margin-top: 50px;
@@ -19,7 +12,6 @@ $green: #84DD7C;
 .bg-purple {
   background-color: $purple;
 }
-
 
 .iin-logo {
   width: 160px;
@@ -55,8 +47,37 @@ $green: #84DD7C;
  color: white;
 }
 
-#map {
-  width: 600px;
-  height: 400px;
-  position: relative;
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 720px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #map {
+    width: 600px;
+    height: 400px;
+    position: relative;
+  }
+
+  .about-list {
+    margin-left: 45px;
+    margin-top: 25px;
+  }
+
+  .sam-img {
+    padding-bottom: 16px;
+  }
+
+  .ukhc-logo {
+    width: 100px;
+  }
+
+   .iin-logo {
+    width: 100px;
+  }
+
+  #accreditation-text {
+    display: flex;
+    justify-content: center;
+  }
 }

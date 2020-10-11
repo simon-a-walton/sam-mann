@@ -1,11 +1,11 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Header from './Header';
-import Content from './Content';
-import Map from './Map';
+import Header from './../components/Header';
+import Content from './../components/Content';
+import Map from './../components/Map';
 
-const ContactSection = () => (
+const Contact = () => (
 <>
   <Row>
     <Col lg="8">
@@ -25,12 +25,12 @@ const ContactSection = () => (
         </li>
         <li>
           <a href="tel:07884404100">
-          <span className="fa-li">
-            <i className="fas fa-phone make-purple" />
-          </span>
-          &nbsp;
-          07884404100
-        </a>
+            <span className="fa-li">
+              <i className="fas fa-phone make-purple" />
+            </span>
+            &nbsp;
+            07884404100
+          </a>
         </li>
         <li>
           <span className="fa-li">
@@ -49,4 +49,4 @@ const ContactSection = () => (
 </>
 );
 
-export default ContactSection;
+export default Contact;

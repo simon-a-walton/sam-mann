@@ -1,10 +1,3 @@
-$dark-purple: #360A53;
-$light-purple: #D1C6FE;
-$purple: #815BB8;
-$green: #84DD7C;
-
-/*HOW IT WORKS*/
-
 .card-icon {
   font-size: 40px;
   color: $green;
@@ -47,5 +40,23 @@ $green: #84DD7C;
 
 .make-green {
   color: $green;
+}
 
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 720px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .cards-list {
+    padding-left: 0;
+  }
+
+  .cards-list li .fa-li {
+    padding-right: 0;
+  }
+
+  .mobile-text {
+    font-size: 20px;
+  }
 }

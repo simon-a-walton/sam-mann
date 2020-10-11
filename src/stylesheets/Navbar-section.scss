@@ -3,8 +3,6 @@ $light-purple: #D1C6FE;
 $purple: #815BB8;
 $green: #84DD7C;
 
-/*NAV BAR*/
-
 header {
   position: sticky;
   top:0;
@@ -16,6 +14,10 @@ header {
   padding: 0.5rem 0.5rem;
 }
 
+.navbar-brand {
+  font-size: calc(12px + 1.15vw);
+}
+
 .navbar-light .navbar-nav .nav-link {
   text-decoration: none;
   color: $dark-purple;
@@ -23,7 +25,7 @@ header {
   margin: 0 8px;
   font-size: 20px;
 
-&:hover {
+  &:hover {
   color: $green;
   text-decoration: none;
 
@@ -35,13 +37,12 @@ button:focus {
 }
 
 .navbar-light .navbar-brand {
-  color: $purple;
+  color: $purple !important;
   font-weight: bold;
   &:hover {
     color: $purple;
   }
 }
-
 
 #header a {
   color: $purple;
@@ -72,8 +73,8 @@ header.green {
 }
 
 .navbar-light .navbar-toggler {
-    color: $dark-purple;
-    border-color: $purple;
+  color: $dark-purple;
+  border-color: $purple;
 }
 
 ul#logo-name li {
@@ -99,7 +100,6 @@ ul#menu li {
    width:100%;
 }
 
-
 .fas.fa-angle-up {
   font-size: 24px;
 
@@ -112,5 +112,37 @@ ul#menu li {
 }
 
 .fas.fa-angle-up {
-     transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+}
+
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 720px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  ul#menu li {
+    display:inline;
+    margin-right: 4px;
+    font-size: 4px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  .navbar-toggler {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    line-height: 0;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  }
+
+    #logo-name a {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
 }
