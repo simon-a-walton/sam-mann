@@ -18,7 +18,7 @@ class HowItWorks extends React.Component {
     const deckTop = document.getElementById("top-of-deck");
     const deckTopOffset = deckTop.offsetTop;
 
-    if (window.pageYOffset >= deckTopOffset - 100) {
+    if (window.pageYOffset >= deckTopOffset) {
       this.setState({ className: "icon-bounce" });
     } else {
       this.setState({ className: "" });
@@ -39,15 +39,13 @@ class HowItWorks extends React.Component {
       third: "We will agree to meet weekly or biweekly at a regular time, either face to face, out in nature or online. "
     }
 
- const styleHeader = {fontSize:'calc(12px + 1.2vw)'};
-
     return (
       <div id="top-of-deck">
         <Row>
           <Col>
             <div className="header-section">
               <Header headerText="Work With Me" />
-              <Content contentText="So you're ready to make a important changes in your life and priotise your health and wellbeing? Great! Here is how the process works..." />
+              <Content contentText="So you're ready to make important changes in your life and priotise your health and wellbeing? Great! Here is how the process works..." />
             </div>
 
           </Col>
