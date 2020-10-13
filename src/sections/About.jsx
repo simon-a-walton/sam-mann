@@ -33,22 +33,6 @@ const About = () => (
             <Content contentText="I wished I had made these changes many years ago, but also I became fascinated by diet, and how what you eat, together with other lifestyle facets, can completely alter – well, everything! I read numerous books and articles until I eventually decided I wanted to train as a health coach, particularly to help other women like me."/>
             <Content contentText="What I love about health coaching is that it is a holistic process. Rather than look at a cluster of symptoms or a body part which is not functioning as it should, health coaching gets to the root of the problem to fix it. Also it takes account of the fact that we are all very different. What works for one person does not necessarily work for the next." />
             <Content contentText="Of course I am not dismissing doctors, or any other practitioner. They do a fantastic job, but their time with you is limited. A health coach works with such practitioners – helping you to find ways to implement advice they have given you, if relevant – or better yet, helping you avoid having to see them at all. Prevention is better than cure!" />
-            <div id="accreditation-logos-bottom">
-              <a href="https://www.ukhealthcoaches.com/england/liss/health-coach/samantha-mann" rel="noopener noreferrer" target="_blank">
-                <img
-                  className="ukhc-logo img-responsive"
-                  src="https://www.heruniqueglow.com/uploads/images/_560x560_crop_center-center_85/UK-Health-Coaches-Association-copy.png"
-                  alt="Health Coaches Association"
-                />
-              </a>
-              <a href="https://www.integrativenutrition.com/health-coaching" rel="noopener noreferrer" target="_blank">
-                <img
-                  className="iin-logo img-responsive"
-                  src="https://images.youracclaim.com/images/3809dced-24e0-43ff-8350-5e697ee99012/HCTP_INHC_Badge.png"
-                  alt="Health Coaches Association"
-                />
-              </a>
-            </div>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-3 order-lg-2 order-md-1 order-sm-1 order-xs-1" align="center">
             <a href="https://www.ukhealthcoaches.com/england/liss/health-coach/samantha-mann" rel="noopener noreferrer" target="_blank">
@@ -80,6 +64,22 @@ const About = () => (
         <div className="text-center p-5" style={{fontSize:'calc(16px + 1.25vw)'}}>
           <span style={{fontWeight:'700'}}>"Real Health Matters</span> now. Back to basics, back to nature, back to balance".
         </div>
+        <div id="accreditation-logos-bottom">
+              <a href="https://www.ukhealthcoaches.com/england/liss/health-coach/samantha-mann" rel="noopener noreferrer" target="_blank">
+                <img
+                  className="ukhc-logo img-responsive"
+                  src="https://www.heruniqueglow.com/uploads/images/_560x560_crop_center-center_85/UK-Health-Coaches-Association-copy.png"
+                  alt="Health Coaches Association"
+                />
+              </a>
+              <a href="https://www.integrativenutrition.com/health-coaching" rel="noopener noreferrer" target="_blank">
+                <img
+                  className="iin-logo img-responsive"
+                  src="https://images.youracclaim.com/images/3809dced-24e0-43ff-8350-5e697ee99012/HCTP_INHC_Badge.png"
+                  alt="Health Coaches Association"
+                />
+              </a>
+            </div>
       </div>
     </div>
   </div>

@@ -42,9 +42,6 @@ const App = () => (
       <section id="about">
         <About />
       </section>
-      <section className="bg-badges">
-        <Badges />
-      </section>
     </Fade>
 
     <Fade>
