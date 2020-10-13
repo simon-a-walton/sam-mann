@@ -27,7 +27,7 @@ const Badges = () => {
           </a>
         </Col>
         <Col xs="6" sm="6" md="3">
-          <a href="https://www.ukhealthcoaches.com/england/liss/health-coach/samantha-mann" rel="noopener noreferrer" target="_blank">
+          <a href="https://www.integrativenutrition.com/health-coaching" rel="noopener noreferrer" target="_blank">
             <img
               className="iin-logo img-responsive"
               src="https://images.youracclaim.com/images/3809dced-24e0-43ff-8350-5e697ee99012/HCTP_INHC_Badge.png"
