@@ -28,9 +28,9 @@ componentDidMount() {
     });
   });
 
-  // const marker = new mapboxgl.Marker()
-  // .setLngLat([-0.882597, 51.040269])
-  // .addTo(map);
+  const marker = new mapboxgl.Marker()
+  .setLngLat([-0.882597, 51.040269])
+  .addTo(map);
 }
 
 render() {
