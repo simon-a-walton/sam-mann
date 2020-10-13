@@ -16,11 +16,9 @@ import './App.scss';
 const App = () => (
   <>
     <NavbarSection />
-
     <section>
       <Banner className="container-layout" />
     </section>
-
     <Fade>
       <section id="health-coaching" >
         <Container fluid className="container-layout coaching-container" >
@@ -28,7 +26,6 @@ const App = () => (
         </Container>
       </section>
     </Fade>
-
     <Fade>
       <section id="work-with-me">
         <Container fluid className="container-layout text-purple p-3 pb-5">
@@ -36,13 +33,11 @@ const App = () => (
         </Container>
       </section>
     </Fade>
-
     <Fade>
       <section id="about">
         <About />
       </section>
     </Fade>
-
     <Fade>
       <section id="contact">
         <Container fluid className="container-layout text-purple p-3 pb-5" >
@@ -50,7 +45,6 @@ const App = () => (
         </Container>
       </section>
     </Fade>
-
     <section id="footer" className="bg-dark-purple">
       <Footer />
     </section>
