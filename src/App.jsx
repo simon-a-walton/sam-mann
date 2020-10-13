@@ -7,11 +7,10 @@ import NavbarSection from './sections/Navbar-section.jsx';
 import Contact from './sections/Contact';
 import About from './sections/About';
 import Coaching from './sections/Coaching';
-import Badges from './sections/Badges';
 
 import Fade from 'react-reveal/Fade';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
 const App = () => (
