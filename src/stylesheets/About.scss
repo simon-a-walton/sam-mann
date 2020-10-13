@@ -15,7 +15,7 @@
 
 .iin-logo {
   width: 160px;
-  background-color: white;
+
   padding: 8px;
   border-radius: 8px;
 }
@@ -24,7 +24,11 @@
   width: 160px;
   background-color: white;
   padding: 8px;
-   border-radius: 8px;
+   border-radius: 50%;
+}
+
+#accreditation-logos-bottom {
+  display: none;
 }
 
 .bg-badges {
@@ -40,6 +44,20 @@
     margin: 12px;
 }
 
+.sam-img {
+  width: 300px;
+}
+
+#certified-text {
+  font-size: 14px;
+  padding-top: 12px;
+  font-weight: 500;
+}
+
+ #content-text {
+    text-align: justify;
+    text-justify: auto;
+  }
 
 /*FAST TEXT*/
 
@@ -66,6 +84,7 @@
 
   .sam-img {
     padding-bottom: 16px;
+    width: 200px;
   }
 
   .ukhc-logo {
@@ -79,5 +98,20 @@
   #accreditation-text {
     display: flex;
     justify-content: center;
+  }
+
+  #accreditation-logos-bottom {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+
+  #accreditation-logos-top {
+    display: none;
+  }
+
+  #content-text {
+    text-align:none;
+    text-justify:none;
   }
 }
