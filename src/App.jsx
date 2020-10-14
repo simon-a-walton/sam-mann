@@ -1,8 +1,8 @@
 import React from 'react';
-import HowItWorks from './sections/How-it-works';
+import WorkWithMe from './sections/WorkWithMe';
 import Footer from './sections/Footer';
 import Banner from './sections/Banner';
-import NavbarSection from './sections/Navbar-section.jsx';
+import NavbarComponent from './components/NavbarComponent.jsx';
 import Contact from './sections/Contact';
 import About from './sections/About';
 import Coaching from './sections/Coaching';
@@ -14,7 +14,7 @@ import './App.scss';
 
 const App = () => (
   <>
-    <NavbarSection />
+    <NavbarComponent />
     <section>
       <Banner className="container-layout" />
     </section>
@@ -28,7 +28,7 @@ const App = () => (
       id="work-with-me"
       containerClassName='container-layout'
     >
-      <HowItWorks />
+      <WorkWithMe />
     </AppContent>
     <section id="about">
       <About />

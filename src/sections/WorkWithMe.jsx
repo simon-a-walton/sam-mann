@@ -4,9 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from './../components/Header';
 import Content from './../components/Content';
-import CardLayout from './../components/Card-layout';
+import CardLayout from './../components/CardLayout';
 
-class HowItWorks extends React.Component {
+class WorkWithMe extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -72,4 +72,4 @@ class HowItWorks extends React.Component {
   }
 }
 
-export default HowItWorks;
+export default WorkWithMe;

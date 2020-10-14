@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 
-class NavbarSection extends React.Component {
+class NavbarComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -74,4 +74,4 @@ class NavbarSection extends React.Component {
 }
 
 
-export default NavbarSection;
+export default NavbarComponent;
