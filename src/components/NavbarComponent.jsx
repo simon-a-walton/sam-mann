@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import { healthCoachingID, workWithMeID, aboutID, contactID } from "./../constants/AppConstants";
 
 class NavbarComponent extends React.Component {
   constructor(props) {
@@ -18,28 +19,6 @@ class NavbarComponent extends React.Component {
   }
 
   render() {
-    const pages = ['Health Coaching', 'Work With Me', 'About', 'Contact'];
-
-    const turnToTag = (title) => {
-      return (title.toLowerCase().split(" ").join('-'));
-    }
-
-    const navLinks = pages.map((page, i) => {
-      if (page.includes(" ")) {
-        return (
-          <Nav.Link key={i} href={'#' + turnToTag(page)}>
-            {page}
-          </Nav.Link>
-        )
-      } else {
-      return (
-        <Nav.Link key={i} href={'#' + page.toLowerCase()}>
-          {page}
-        </Nav.Link>
-      )
-      }
-    });
-
     return (
       <header id="nav-bar" className={this.state.className}>
         <Navbar collapseOnSelect expand="lg">
@@ -60,7 +39,18 @@ class NavbarComponent extends React.Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav id="menu" className="float-left">
-              {navLinks}
+              <Nav.Link href={`#${healthCoachingID}`}>
+                Health Coaching
+              </Nav.Link>
+              <Nav.Link href={`#${workWithMeID}`}>
+                Work With Me
+              </Nav.Link>
+              <Nav.Link href={`#${aboutID}`}>
+                About
+              </Nav.Link>
+              <Nav.Link href={`#${contactID}`}>
+                Contact
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -73,5 +63,5 @@ class NavbarComponent extends React.Component {
   }
 }
 
-
 export default NavbarComponent;
+
