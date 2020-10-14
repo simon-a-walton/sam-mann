@@ -7,7 +7,7 @@ import Map from './../components/Map';
 
 const Contact = () => (
 <>
-  <Row>
+  <Row className="text-purple p-3 pb-5">
     <Col lg="8">
       <div className="header-section">
         <Header headerText="Contact" />

@@ -40,7 +40,7 @@ class HowItWorks extends React.Component {
     }
 
     return (
-      <div id="top-of-deck">
+      <div id="top-of-deck" className="text-purple p-3 pb-5">
         <Row>
           <Col>
             <div className="header-section">

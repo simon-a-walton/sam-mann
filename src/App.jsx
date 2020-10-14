@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import HowItWorks from './sections/How-it-works';
 import Footer from './sections/Footer';
 import Banner from './sections/Banner';
@@ -7,8 +6,8 @@ import NavbarSection from './sections/Navbar-section.jsx';
 import Contact from './sections/Contact';
 import About from './sections/About';
 import Coaching from './sections/Coaching';
+import AppContent from './components/AppContent';
 
-import Fade from 'react-reveal/Fade';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.scss';
@@ -19,35 +18,33 @@ const App = () => (
     <section>
       <Banner className="container-layout" />
     </section>
-    <Fade>
-      <section id="health-coaching" >
-        <Container fluid className="container-layout coaching-container" >
-          <Coaching />
-        </Container>
-      </section>
-    </Fade>
-    <Fade>
-      <section id="work-with-me">
-        <Container fluid className="container-layout text-purple p-3 pb-5">
-          <HowItWorks/>
-        </Container>
-      </section>
-    </Fade>
-    <Fade>
-      <section id="about">
-        <About />
-      </section>
-    </Fade>
-    <Fade>
-      <section id="contact">
-        <Container fluid className="container-layout text-purple p-3 pb-5" >
-          <Contact />
-        </Container>
-      </section>
-    </Fade>
-    <section id="footer" className="bg-dark-purple">
-      <Footer />
+    <AppContent
+      id="health-coaching"
+      containerClassName='container-layout coaching-container'
+    >
+      <Coaching />
+    </AppContent>
+    <AppContent
+      id="work-with-me"
+      containerClassName='container-layout'
+    >
+      <HowItWorks />
+    </AppContent>
+    <section id="about">
+      <About />
     </section>
+    <AppContent
+      id="contact"
+      containerClassName='container-layout'
+    >
+      <Contact />
+    </AppContent>
+    <AppContent
+      id="footer"
+      containerClassName='bg-dark-purple'
+    >
+      <Footer />
+    </AppContent>
   </>
 );
 
