@@ -10,8 +10,16 @@ class WorkWithMe extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      className: "",
+      isScrolled: false
     };
+  }
+
+  getClassName() {
+    if (this.state.isScrolled) {
+      return "icon-bounce"
+  } else {
+      return null;
+    }
   }
 
   handleScroll = () => {
@@ -19,9 +27,9 @@ class WorkWithMe extends React.Component {
     const deckTopOffset = deckTop.offsetTop;
 
     if (window.pageYOffset >= deckTopOffset) {
-      this.setState({ className: "icon-bounce" });
+      this.setState({ isScrolled: true });
     } else {
-      this.setState({ className: "" });
+      this.setState({ isScrolled: false });
     }
   }
 
@@ -59,9 +67,9 @@ class WorkWithMe extends React.Component {
           </Col>
         </Row>
         <CardDeck className="py-5 mx-2">
-          <CardLayout icon={`fas fa-phone + ${this.state.className}`} header={cardHeader.first} text={cardText.first} />
-          <CardLayout icon={`fas fa-calendar + ${this.state.className}`} header={cardHeader.second} text={cardText.second} />
-          <CardLayout icon={`fas fa-people-arrows + ${this.state.className}`} header={cardHeader.third} text={cardText.third} />
+          <CardLayout icon={`fas fa-phone + ${this.getClassName()}`} header={cardHeader.first} text={cardText.first} />
+          <CardLayout icon={`fas fa-calendar + ${this.getClassName()}`} header={cardHeader.second} text={cardText.second} />
+          <CardLayout icon={`fas fa-people-arrows + ${this.getClassName()}`} header={cardHeader.third} text={cardText.third} />
         </CardDeck>
       </div>
     );

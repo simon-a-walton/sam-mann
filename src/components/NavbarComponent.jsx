@@ -6,21 +6,29 @@ class NavbarComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      className: ""
+      isScrolled: false
     };
+  }
+
+  getClassName() {
+    if (this.state.isScrolled) {
+      return "green"
+  } else {
+      return null;
+    }
   }
 
   handleScroll = () => {
     if (window.pageYOffset > 0) {
-      this.setState({ className: "green" });
+      this.setState({ isScrolled: true });
     } else {
-      this.setState({ className: "" });
+      this.setState({ isScrolled: false });
     }
   }
 
   render() {
     return (
-      <header id="nav-bar" className={this.state.className}>
+      <header id="nav-bar" className={this.getClassName()}>
         <Navbar collapseOnSelect expand="lg">
           <Navbar>
             <Navbar.Brand href="#top">
