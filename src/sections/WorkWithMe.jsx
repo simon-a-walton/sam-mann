@@ -9,8 +9,20 @@ import { colors } from './../constants/StyleConstants';
 import { css } from 'glamor';
 import { hideImage } from './../sections/Coaching';
 
-let coachImage = css({
+const coachImage = css({
   width: '50%'
+})
+
+let bounce = css.keyframes({
+  '0%':  {left:0, top:0},
+  '50%': {left:0, top:'8px'},
+  '100%': {left:0, top:0}
+})
+
+const iconBounce = css({
+  position: 'relative',
+  animation: `${bounce} 0.6s`,
+  animationIterationCount: 3,
 })
 
 class WorkWithMe extends React.Component {
@@ -23,7 +35,7 @@ class WorkWithMe extends React.Component {
 
   getClassName() {
     if (this.state.isScrolled) {
-      return "icon-bounce"
+      return `${iconBounce}`
   } else {
       return null;
     }
@@ -33,7 +45,7 @@ class WorkWithMe extends React.Component {
     const deckTop = document.getElementById("top-of-deck");
     const deckTopOffset = deckTop.offsetTop;
 
-    if (window.pageYOffset >= deckTopOffset) {
+    if (window.pageYOffset >= deckTopOffset -100) {
       this.setState({ isScrolled: true });
     } else {
       this.setState({ isScrolled: false });
