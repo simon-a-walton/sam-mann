@@ -40,11 +40,6 @@ const Footer = () => (
               <i className="fab fa-instagram" />
             </a>
           </li>
-          <li>
-            <a href="https://medium.com" rel="noopener noreferrer" target="_blank">
-              <i className="fab fa-medium" />
-            </a>
-          </li>
         </ul>
       </Col>
     </div>

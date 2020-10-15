@@ -41,12 +41,12 @@ const App = () => (
     >
       <Contact />
     </AppContent>
-    <AppContent
+    <section
       id="footer"
-      containerClassName={`${css({ backgroundColor: colors.darkPurple, color: 'white' })}`}
+      className={`${css({ backgroundColor: colors.darkPurple, color: 'white' })}`}
     >
       <Footer />
-    </AppContent>
+    </section>
   </>
 );
 
