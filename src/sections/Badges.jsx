@@ -2,20 +2,21 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import { css } from 'glamor';
 
 
 const Badges = () => {
-  const containerStyle = {
+  const containerStyle = css({
     maxWidth: 900,
     margin: '0 auto',
     padding: 25
-  }
+  })
 
   return (
-    <Container style={containerStyle}>
+    <Container {...containerStyle}>
       <Row className="text-center text-white py-3">
         <Col id="accreditation-text" sm="12" md="3" className="text-center pt-3">
-          <p style={{fontSize: 25, fontWeight: 500}}className="pb-sm-3 pt-lg-5 pt-md-5 pt-sm-1 text-center"><strong>Accreditations</strong></p>
+          <p style={{fontSize: 25, fontWeight: 500}} className="pb-sm-3 pt-lg-5 pt-md-5 pt-sm-1 text-center"><strong>Accreditations</strong></p>
         </Col>
         <Col xs="6" sm="6" md="3">
           <a href="https://www.ukhealthcoaches.com/england/liss/health-coach/samantha-mann" rel="noopener noreferrer" target="_blank">

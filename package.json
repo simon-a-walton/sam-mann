@@ -19,7 +19,6 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.1.14"
   },
@@ -33,6 +32,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "font-awesome-animation": "^0.2.1",
+    "glamor": "^2.20.40",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
     "mapbox-gl": "^1.12.0",
