@@ -12,10 +12,9 @@ class NavbarComponent extends React.Component {
 
   getClassName() {
     if (this.state.isScrolled) {
-      return "green"
-  } else {
-      return null;
+      return "green";
     }
+    return null;
   }
 
   handleScroll = () => {
