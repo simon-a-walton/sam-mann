@@ -8,7 +8,8 @@ import About from './sections/About';
 import Coaching from './sections/Coaching';
 import AppContent from './components/AppContent';
 import { healthCoachingID, workWithMeID, aboutID, contactID } from "./constants/AppConstants";
-
+import { colors } from './constants/StyleConstants';
+import { css } from 'glamor';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.scss';
@@ -42,7 +43,7 @@ const App = () => (
     </AppContent>
     <AppContent
       id="footer"
-      containerClassName='bg-dark-purple'
+      containerClassName={`${css({ backgroundColor: colors.darkPurple, color: 'white' })}`}
     >
       <Footer />
     </AppContent>

@@ -5,6 +5,13 @@ import Col from 'react-bootstrap/Col';
 import Header from './../components/Header';
 import Content from './../components/Content';
 import CardLayout from './../components/CardLayout';
+import { colors } from './../constants/StyleConstants';
+import { css } from 'glamor';
+import { hideImage } from './../sections/Coaching';
+
+let coachImage = css({
+  width: '50%'
+})
 
 class WorkWithMe extends React.Component {
   constructor(props) {
@@ -48,7 +55,7 @@ class WorkWithMe extends React.Component {
     }
 
     return (
-      <div id="top-of-deck" className="text-purple p-3 pb-5">
+      <div id="top-of-deck" className={`${css({ color: colors.darkPurple})} p-3 pb-5`}>
         <Row>
           <Col>
             <div className="header-section">
@@ -57,11 +64,11 @@ class WorkWithMe extends React.Component {
             </div>
 
           </Col>
-          <Col className="d-sm-none d-md-none d-lg-block d-xl-block" align="right" id="coach-img">
+          <Col className={`${hideImage} d-sm-none d-md-none d-lg-block d-xl-block`} align="right">
             <img
               src="https://www.comphealthclinic.co.uk/wp-content/uploads/2017/02/bigstock-Woman-talking-to-therapist-on-139783985.jpg"
               alt="coach"
-              className="coach-image pr-4"
+              className={`${coachImage} pr-4`}
               align="center"
             />
           </Col>
