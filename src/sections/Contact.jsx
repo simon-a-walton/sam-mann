@@ -4,9 +4,10 @@ import Col from 'react-bootstrap/Col';
 import Header from './../components/Header';
 import Content from './../components/Content';
 import Map from './../components/Map';
-import { colors } from "./../constants/StyleConstants";
+import { colors } from './../constants/StyleConstants';
 import { css } from 'glamor';
-import ContactContent from "./../components/ContactContent";
+import ContactContent from './../components/ContactContent';
+import ContactForm from './../components/ContactForm'
 
 const Contact = () => (
 <>
@@ -16,7 +17,10 @@ const Contact = () => (
         <Header headerText="Contact" />
         <Content contentText="Want to find out more? Get in touch to arrange a free consultation today." />
       </div>
-      <ul className="fa-ul list-unstyled contact-list" style={{fontSize:'calc(8px + 1.05vw)'}}>
+       <div className="header-section">
+        <ContactForm />
+      </div>
+      <ul className="fa-ul list-unstyled contact-list" style={{fontSize:'calc(12px + 1vh)'}}>
         <ContactContent
           link='mailto:samantha@realhealthmatters.co.uk?subject=Enquiry from Website'
           containerClassName='fas fa-envelope-open-text'
@@ -30,14 +34,15 @@ const Contact = () => (
           07884404100
         </ContactContent>
          <ContactContent
-          link=''
+          link='#contact'
           containerClassName='fas fa-map-pin'
         >
           Liss, England, GU33 7HN
         </ContactContent>
       </ul>
+
     </Col>
-    <Col lg="4" align="center" className="pb-5">
+    <Col lg="4" align="center" className="py-5">
       <Map />
     </Col>
   </Row>

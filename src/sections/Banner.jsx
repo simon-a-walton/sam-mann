@@ -28,7 +28,7 @@ const Banner = () => (
   <div style={styles.header} className="banner-bg">
     <Jumbotron style={styles.content}>
       <Bounce top delay={4500}>
-        <a href="mailto:samantha@realhealthmatters.co.uk?subject=Enquiry from Website" id="contact-button" className="ml-3">
+        <a href="#contact" id="contact-button" className="ml-3">
           Get in Touch
         </a>
       </Bounce>
