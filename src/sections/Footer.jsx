@@ -1,13 +1,17 @@
 import React from "react";
 import Col from 'react-bootstrap/Col';
+import { css } from 'glamor';
 
+const footerFont = css({
+  fontSize:'calc(6px + 1.3vh)'
+});
 
 const Footer = () => (
 <>
   <div className="pt-4">
     <div className="footer-info">
       <Col className="text-left footer-text ">
-        <p>
+        <p {...footerFont}>
           &copy;
           {new Date().getFullYear()}
           &nbsp;
@@ -17,7 +21,7 @@ const Footer = () => (
 
       <Col className="text-center footer-col">
         <div className="footer-copyright">
-          <p>
+          <p {...footerFont}>
             Created by
             <a href="https://simon-a-walton.github.io/profile"> Simon Walton </a>
             using
