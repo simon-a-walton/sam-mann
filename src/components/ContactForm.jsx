@@ -28,7 +28,7 @@ export default class ContactForm extends React.Component {
         method="POST"
       >
         <div className="row">
-          <div className="col-6">
+          <div className="col-lg-6 col-sm-12">
             <label>Email:</label>
             <input type="email" name="email" className="w-100"/>
           </div>

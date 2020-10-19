@@ -20,7 +20,7 @@ const Contact = () => (
        <div className="header-section">
         <ContactForm />
       </div>
-      <ul className="fa-ul list-unstyled contact-list" style={{fontSize:'calc(12px + 1vh)'}}>
+      <ul className="fa-ul list-unstyled contact-list" style={{fontSize:'calc(8px + 1vh)'}}>
         <ContactContent
           link='mailto:samantha@realhealthmatters.co.uk?subject=Enquiry from Website'
           containerClassName='fas fa-envelope-open-text'
