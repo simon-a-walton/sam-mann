@@ -4,12 +4,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
+import happyPeople from './../images/happy-people.jpg';
 import { colors } from './../constants/StyleConstants';
 import { css } from 'glamor';
 
 const styles = {
   header: {
-    backgroundImage: 'url(https://www.inlifehealthcare.com/wp-content/uploads/2018/11/o-HAPPY-facebook.jpg)',
+    backgroundImage: `url(${happyPeople}`,
     height: '100vh',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',

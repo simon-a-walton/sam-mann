@@ -4,18 +4,19 @@ import Col from 'react-bootstrap/Col';
 import Header from './../components/Header';
 import Content from './../components/Content';
 import { css } from 'glamor';
-import { colors } from "./../constants/StyleConstants";
+import { colors } from './../constants/StyleConstants';
+import happyWoman from './../images/happy-woman.jpg';
 
 const coachingImage = css({
   paddingTop: '40px',
   width: '80%'
-})
+});
 
 export const hideImage = css({
   '@media(min-width: 320px) and (max-width: 720px)': {
     display: 'none'
   }
-})
+});
 
 const Coaching = () => (
 <>
@@ -67,7 +68,7 @@ const Coaching = () => (
     </Col>
     <Col className={`${hideImage} d-sm-none d-md-none d-lg-block d-xl-block`} sm="3" lg="4" align="right">
       <img
-        src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        src={happyWoman}
         alt="Happy Woman"
         className={coachingImage}
       />
