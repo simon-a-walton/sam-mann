@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import { css } from 'glamor';
 
 const footerFont = css({
-  fontSize:'calc(6px + 1.05vw)'
+  fontSize:'calc(4px + 0.6vw)'
 });
 
 const Footer = () => (
@@ -24,16 +24,12 @@ const Footer = () => (
           <p {...footerFont}>
             Created by
             <a href="https://simon-a-walton.github.io/profile"> Simon Walton </a>
-            using
-            <span>
-            <strong> React⚛</strong>
-            </span>
           </p>
         </div>
       </Col>
 
       <Col className="text-right">
-        <ul className="list-unstyled social-media" style={{fontSize:'calc(25px + 1.5vw)'}}>
+        <ul className="list-unstyled social-media" style={{fontSize:'calc(12px + 1.5vw)'}}>
           <li>
             <a href="https://facebook.com" rel="noopener noreferrer" target="_blank">
               <i className="fab fa-facebook" />
