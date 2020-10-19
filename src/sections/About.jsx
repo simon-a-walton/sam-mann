@@ -15,7 +15,7 @@ const styles = {
   content: {
     height: '100%',
     width: '100%',
-    backgroundColor: 'rgba(121, 75, 246, 0.65)',
+    backgroundColor: 'rgba(121, 75, 246, 0.55)',
     color: 'white'
   }
 }

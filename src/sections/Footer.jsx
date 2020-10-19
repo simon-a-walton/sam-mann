@@ -3,14 +3,14 @@ import Col from 'react-bootstrap/Col';
 import { css } from 'glamor';
 
 const footerFont = css({
-  fontSize:'calc(6px + 1.3vh)'
+  fontSize:'calc(6px + 1.05vw)'
 });
 
 const Footer = () => (
 <>
   <div className="pt-4">
     <div className="footer-info">
-      <Col className="text-left footer-text ">
+      <Col className="text-left">
         <p {...footerFont}>
           &copy;
           {new Date().getFullYear()}

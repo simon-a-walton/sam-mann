@@ -19,7 +19,7 @@ const styles = {
   content: {
     height: '100%',
     width: '100%',
-    backgroundColor: 'rgba(121, 75, 246, 0.65)',
+    backgroundColor: 'rgba(121, 75, 246, 0.55)',
     color: 'white'
   }
 }
@@ -36,7 +36,7 @@ const Banner = () => (
         <Col md={{ span: 8, offset: 2 }} className="pt-5">
           <ul className="banner-list list-unstyled text-center">
             <Fade>
-              <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className={`${css({ color: colors.lightPurple })}`}>You</span> are amazing.</h1></li>
+              <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className={`${css({ color: colors.purple })}`}>You</span> are amazing.</h1></li>
 {/*            <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className="make-light-purple"><Fade delay={1000}>You</Fade></span><Fade delay={1500}> are </Fade><Fade delay={2000}> amazing.</Fade></h1></li>
 */}         </Fade>
             <Fade delay={1500}>
