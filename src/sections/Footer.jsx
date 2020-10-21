@@ -23,7 +23,7 @@ const Footer = () => (
         <div className="footer-copyright">
           <p {...footerFont}>
             Created by
-            <a href="https://simon-a-walton.github.io/profile"> Simon Walton </a>
+            <a href="https://simonwaltondev.com"> Simon Walton </a>
           </p>
         </div>
       </Col>
