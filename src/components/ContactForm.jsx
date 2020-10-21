@@ -1,5 +1,5 @@
-import React from "react";
-import { colors } from "./../constants/StyleConstants";
+import React from 'react';
+import { colors } from './../constants/StyleConstants';
 import { css } from 'glamor';
 
 const submitButton = css({
@@ -15,7 +15,7 @@ export default class ContactForm extends React.Component {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
-      status: ""
+      status: ''
     };
   }
 
@@ -24,21 +24,21 @@ export default class ContactForm extends React.Component {
     return (
       <form
         onSubmit={this.submitForm}
-        action="https://formspree.io/f/xeqpgqrk"
-        method="POST"
+        action='https://formspree.io/f/xeqpgqrk'
+        method='POST'
       >
-        <div className="row">
-          <div className="col-lg-6 col-sm-12">
+        <div className='row'>
+          <div className='col-lg-6 col-sm-12'>
             <label>Email:</label>
-            <input type="email" name="email" className="w-100"/>
+            <input type='email' name='email' className='w-100'/>
           </div>
-          <div className="col-12 pt-2">
+          <div className='col-12 pt-2'>
             <label>Message:</label>
-            <input type="text" name="message" className="p-3 w-100" />
+            <input type='text' name='message' className='p-3 w-100' />
           </div>
         </div>
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button className={submitButton}>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+        {status === 'SUCCESS' ? <p>Thanks!</p> : <button className={submitButton}>Submit</button>}
+        {status === 'ERROR' && <p>Ooops! There was an error.</p>}
       </form>
     );
   }
@@ -49,14 +49,14 @@ export default class ContactForm extends React.Component {
     const data = new FormData(form);
     const xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader('Accept', 'application/json');
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        this.setState({ status: "SUCCESS" });
+        this.setState({ status: 'SUCCESS' });
       } else {
-        this.setState({ status: "ERROR" });
+        this.setState({ status: 'ERROR' });
       }
     };
     xhr.send(data);

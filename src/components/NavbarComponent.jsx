@@ -1,13 +1,13 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { healthCoachingID, workWithMeID, aboutID, contactID } from "./../constants/AppConstants";
+import { healthCoachingID, workWithMeID, aboutID, contactID } from './../constants/AppConstants';
 import { css } from 'glamor';
 
 const zoomEffect = css({
   [`& :hover`]: {
     transform: 'scale(1.05)'
   }
-})
+});
 
 
 const brandPadding = css({
@@ -18,13 +18,13 @@ class NavbarComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isScrolled: false
+      isScrolled: false,
     };
   }
 
   getClassName() {
     if (this.state.isScrolled) {
-      return "green";
+      return 'green';
     }
     return null;
   }
@@ -39,16 +39,16 @@ class NavbarComponent extends React.Component {
 
   render() {
     return (
-      <header id="nav-bar" className={this.getClassName()}>
-        <Navbar collapseOnSelect expand="lg">
+      <header id='nav-bar' className={this.getClassName()}>
+        <Navbar collapseOnSelect expand='lg'>
           <Navbar {...zoomEffect}>
-            <Navbar.Brand {...brandPadding}  href="#top">
+            <Navbar.Brand {...brandPadding}  href='#top'>
               Real Health Matters
             </Navbar.Brand>
           </Navbar>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav id="menu" className="float-left">
+          <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+          <Navbar.Collapse id='responsive-navbar-nav'>
+            <Nav id='menu' className='float-left'>
               <Nav.Link href={`#${healthCoachingID}`}>
                 Health Coaching
               </Nav.Link>
@@ -69,7 +69,7 @@ class NavbarComponent extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
 }
 

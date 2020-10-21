@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { colors } from "./../constants/StyleConstants";
+import { colors } from './../constants/StyleConstants';
 import { css } from 'glamor';
 
 
@@ -15,7 +15,7 @@ class AppContent extends React.PureComponent {
     return (
       <li>
         <a href={this.props.link}>
-          <span className="fa-li">
+          <span className='fa-li'>
             <i className={`${this.props.containerClassName} ${css({ color: colors.purple})}`} />
           </span>
           &nbsp;

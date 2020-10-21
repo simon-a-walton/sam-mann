@@ -7,20 +7,20 @@ import Map from './../components/Map';
 import { colors } from './../constants/StyleConstants';
 import { css } from 'glamor';
 import ContactContent from './../components/ContactContent';
-import ContactForm from './../components/ContactForm'
+import ContactForm from './../components/ContactForm';
 
 const Contact = () => (
 <>
   <Row className={`${css({ color: colors.darkPurple})} p-3 pb-5`}>
-    <Col lg="8">
-      <div className="header-section">
-        <Header headerText="Contact" />
-        <Content contentText="Want to find out more? Get in touch to arrange a free consultation today." />
+    <Col lg='8'>
+      <div className='header-section'>
+        <Header headerText='Contact' />
+        <Content contentText='Want to find out more? Get in touch to arrange a free consultation today.' />
       </div>
-       <div className="header-section">
+       <div className='header-section'>
         <ContactForm />
       </div>
-      <ul className="fa-ul list-unstyled contact-list" style={{fontSize:'calc(8px + 1vw)'}}>
+      <ul className='fa-ul list-unstyled contact-list' style={{fontSize:'calc(8px + 1vw)'}}>
         <ContactContent
           link='mailto:samantha@realhealthmatters.co.uk?subject=Enquiry from Website'
           containerClassName='fas fa-envelope-open-text'
@@ -42,7 +42,7 @@ const Contact = () => (
       </ul>
 
     </Col>
-    <Col lg="4" align="center" className="py-5">
+    <Col lg='4' align='center' className='py-5'>
       <Map />
     </Col>
   </Row>
