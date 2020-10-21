@@ -7,7 +7,7 @@ import Contact from './sections/Contact';
 import About from './sections/About';
 import Coaching from './sections/Coaching';
 import AppContent from './components/AppContent';
-import { healthCoachingID, workWithMeID, aboutID, contactID } from "./constants/AppConstants";
+import { healthCoachingID, workWithMeID, aboutID, contactID } from './constants/AppConstants';
 import { colors } from './constants/StyleConstants';
 import { css } from 'glamor';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,7 +18,7 @@ const App = () => (
   <>
     <NavbarComponent />
     <section>
-      <Banner className="container-layout" />
+      <Banner className='container-layout' />
     </section>
     <AppContent
       id={healthCoachingID}
@@ -42,7 +42,7 @@ const App = () => (
       <Contact />
     </AppContent>
     <section
-      id="footer"
+      id='footer'
       className={`${css({ backgroundColor: colors.darkPurple, color: 'white' })}`}
     >
       <Footer />

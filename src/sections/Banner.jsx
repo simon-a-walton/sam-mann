@@ -26,20 +26,19 @@ const styles = {
 }
 
 const Banner = () => (
-  <div style={styles.header} className="banner-bg">
+  <div style={styles.header} className='banner-bg'>
     <Jumbotron style={styles.content}>
       <Bounce top delay={4500}>
-        <a href="#contact" id="contact-button" className="ml-3">
+        <a href='#contact' id='contact-button' className='ml-3'>
           Get in Touch
         </a>
       </Bounce>
       <Row>
-        <Col md={{ span: 8, offset: 2 }} className="pt-5">
-          <ul className="banner-list list-unstyled text-center">
+        <Col md={{ span: 8, offset: 2 }} className='pt-5'>
+          <ul className='banner-list list-unstyled text-center'>
             <Fade>
-              <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className={`${css({ color: colors.purple })}`}>You</span> are amazing.</h1></li>
-{/*            <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className="make-light-purple"><Fade delay={1000}>You</Fade></span><Fade delay={1500}> are </Fade><Fade delay={2000}> amazing.</Fade></h1></li>
-*/}         </Fade>
+              <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className={`${css({ color: colors.lightPurple })}`}>You</span> are amazing.</h1></li>
+            </Fade>
             <Fade delay={1500}>
               <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className={`${css({ color: colors.green })}`}>Your body</span> is amazing.</h1></li>
             </Fade>
@@ -49,9 +48,9 @@ const Banner = () => (
           </ul>
         </Col>
         <Fade delay={4500}>
-          <div className="container p-5 mb-3">
+          <div className='container p-5 mb-3'>
             <h4>
-              You are in control of more than you think you are. <span className=""> Simple but consistent changes in lifestyle can reap great rewards...</span>
+              You are in control of more than you think you are. Simple but consistent changes in lifestyle can reap great rewards...
             </h4>
           </div>
         </Fade>
