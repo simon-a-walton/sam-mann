@@ -1,6 +1,11 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { healthCoachingID, workWithMeID, aboutID, contactID } from "./../constants/AppConstants";
+import { css } from 'glamor';
+
+const brandPadding = css({
+  paddingLeft: '8px'
+});
 
 class NavbarComponent extends React.Component {
   constructor(props) {
@@ -30,16 +35,7 @@ class NavbarComponent extends React.Component {
       <header id="nav-bar" className={this.getClassName()}>
         <Navbar collapseOnSelect expand="lg">
           <Navbar>
-            <Navbar.Brand href="#top">
-              <img
-                alt=""
-                src="https://www.heruniqueglow.com/uploads/images/_560x560_crop_center-center_85/UK-Health-Coaches-Association-copy.png"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                id="logo-name"
-              />
-              &nbsp;
+            <Navbar.Brand {...brandPadding} href="#top">
               Real Health Matters
             </Navbar.Brand>
           </Navbar>
