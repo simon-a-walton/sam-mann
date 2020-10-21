@@ -42,18 +42,18 @@ const About = () => (
                 alt="Sam"
               />
             </a>
-            <p id="certified-text">Samantha Mann, PhD- certified Health Coach</p>
+            <p id="certified-text">Samantha Mann, PhD. Certified Health Coach</p>
             <div id="accreditation-logos-top">
               <a href="https://www.ukhealthcoaches.com/england/liss/health-coach/samantha-mann" rel="noopener noreferrer" target="_blank">
                 <img
-                  className="ukhc-logo img-responsive"
+                  className="ukhc-logo img-responsive m-3"
                   src="https://www.heruniqueglow.com/uploads/images/_560x560_crop_center-center_85/UK-Health-Coaches-Association-copy.png"
                   alt="Health Coaches Association"
                 />
               </a>
               <a href="https://www.integrativenutrition.com/health-coaching" rel="noopener noreferrer" target="_blank">
                 <img
-                  className="iin-logo img-responsive"
+                  className="iin-logo img-responsive m-3"
                   src="https://images.youracclaim.com/images/3809dced-24e0-43ff-8350-5e697ee99012/HCTP_INHC_Badge.png"
                   alt="Health Coaches Association"
                 />
