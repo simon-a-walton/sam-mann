@@ -37,10 +37,10 @@ const Banner = () => (
         <Col md={{ span: 8, offset: 2 }} className='pt-5'>
           <ul className='banner-list list-unstyled text-center'>
             <Fade>
-              <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className={`${css({ color: colors.lightPurple })}`}>You</span> are amazing.</h1></li>
+              <li><h1><span className={`${css({ color: colors.darkPurple , fontSize: 'calc(16px + 4vw)'})}`}>You</span> are amazing.</h1></li>
             </Fade>
             <Fade delay={1500}>
-              <li><h1><span style={{fontSize:'calc(16px + 4vw)'}} className={`${css({ color: colors.green })}`}>Your body</span> is amazing.</h1></li>
+              <li><h1><span className={`${css({ color: colors.darkPurple, fontSize:'calc(16px + 4vw)' })}`}>Your body</span> is amazing.</h1></li>
             </Fade>
             <Fade delay={3000}>
               <li><h1>...So why don’t you feel amazing?</h1></li>
