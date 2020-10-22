@@ -1,7 +1,7 @@
 $dark-purple: #1d0461;
-$light-purple: #AE98F7;
+$light-purple: #c0bbff;
 $purple: #796EFF;
-$green: #50DDC4;
+$green: #84DD7C;
 
 header {
   position: sticky;
@@ -54,8 +54,7 @@ button:focus {
 
 header.green {
   padding: 8px 12px;
-  background-color: rgba(80, 221, 196, 0.95);
-
+  background-color: rgba(132, 221, 124, 0.95);
   z-index: 1;
     .navbar-light .navbar-nav .nav-link {
     color: white;
@@ -67,7 +66,7 @@ header.green {
         font-weight: 500;
       }
     .navbar-light .navbar-brand {
-      color: white;
+      color: $purple;
       font-weight: bold;
     }
     #contact-button {
