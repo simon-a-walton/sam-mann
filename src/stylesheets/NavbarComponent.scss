@@ -1,7 +1,7 @@
-$dark-purple: #360A53;
-$light-purple: #D1C6FE;
-$purple: #794BF6;
-$green: #84DD7C;
+$dark-purple: #1d0461;
+$light-purple: #AE98F7;
+$purple: #796EFF;
+$green: #50DDC4;
 
 header {
   position: sticky;
@@ -18,6 +18,10 @@ header {
   font-size: calc(12px + 1.15vw);
 }
 
+.nav-link {
+  font-weight: 400;
+}
+
 .navbar-light .navbar-nav .nav-link {
   text-decoration: none;
   color: $dark-purple;
@@ -26,7 +30,7 @@ header {
   font-size: 20px;
 
   &:hover {
-  color: $green;
+  color: $purple;
   text-decoration: none;
 
   }
@@ -50,7 +54,8 @@ button:focus {
 
 header.green {
   padding: 8px 12px;
-  background-color: rgba(132, 221, 124, 0.95);
+  background-color: rgba(80, 221, 196, 0.95);
+
   z-index: 1;
     .navbar-light .navbar-nav .nav-link {
     color: white;
