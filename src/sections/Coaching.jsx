@@ -66,7 +66,7 @@ const Coaching = () => (
           </div>
       </div>
     </Col>
-    <Col className={`${hideImage} d-sm-none d-md-none d-lg-block d-xl-block`} sm='3' lg='4' align='right'>
+    <Col className={`${hideImage} d-sm-none d-md-none d-lg-block d-xl-block`} sm='3' lg='6' align='center'>
       <img
         src={happyWoman}
         alt='Happy Woman'
