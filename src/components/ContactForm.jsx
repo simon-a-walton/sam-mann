@@ -7,8 +7,15 @@ const submitButton = css({
   backgroundColor: colors.purple,
   color: 'white',
   border: '2px solid white',
-  borderRadius: '8px'
-})
+  borderRadius: '8px',
+  ':hover': {
+    backgroundColor: colors.green
+  }
+});
+
+const labelFormat = css({
+  fontWeight: 400
+});
 
 export default class ContactForm extends React.Component {
   constructor(props) {
@@ -29,11 +36,11 @@ export default class ContactForm extends React.Component {
       >
         <div className='row'>
           <div className='col-lg-6 col-sm-12'>
-            <label>Email:</label>
+            <label {...labelFormat}>Email:</label>
             <input type='email' name='email' className='w-100'/>
           </div>
           <div className='col-12 pt-2'>
-            <label>Message:</label>
+            <label {...labelFormat}>Message:</label>
             <input type='text' name='message' className='p-3 w-100' />
           </div>
         </div>
