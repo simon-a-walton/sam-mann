@@ -6,10 +6,10 @@
 @import './stylesheets/WorkWithMe.scss';
 @import './stylesheets/Contact.scss';
 
-$dark-purple: #360A53;
-$light-purple: #D1C6FE;
-$purple: #794BF6;
-$green: #84DD7C;
+$dark-purple: #1d0461;
+$light-purple: #AE98F7;
+$purple: #796EFF;
+$green: #50DDC4;
 
 html {
   scroll-behavior: smooth;
@@ -39,7 +39,13 @@ h4 {
 }
 
 p {
-  font-size: calc(16px + 0.3vw);
+  font-size: calc(14px + 0.3vw);
+  font-weight: 400;
+}
+
+q {
+  font-size: calc(12px + 0.3vw);
+  font-weight: 400;
 }
 
 #root {

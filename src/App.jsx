@@ -32,7 +32,7 @@ const App = () => (
     >
       <WorkWithMe />
     </AppContent>
-    <section id={aboutID}>
+    <section id={aboutID} className="container-fluid coaching-container">
       <About />
     </section>
     <AppContent
