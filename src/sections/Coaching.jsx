@@ -36,7 +36,7 @@ const Coaching = () => (
                 <span className={`fa-li ${css({ color: colors.green}) }`}>
                   <i className='fas fa-people-carry' />
                 </span>
-                <Content contentText='It helps to have a plan of action, unique to you and your circumstances. Health coaching acts as a guiding hand and provides you with a clear, detailed plan alongside dedicated support to help you get the results you want.' />
+                <Content contentText='It helps to have a plan of action, unique to you and your circumstances. Health coaching acts as a guiding hand and provides you with a clear plan and dedicated support to help you follow that plan and get the results you want.' />
               </li>
               <li>
                 <span className={`fa-li ${css({ color: colors.green}) }`}>

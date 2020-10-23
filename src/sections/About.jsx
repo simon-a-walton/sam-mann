@@ -1,18 +1,17 @@
 import React from 'react';
 import Header from './../components/Header';
 import Content from './../components/Content';
-import Row from 'react-bootstrap/Row';
 
 const About = () => (
 <>
   <div>
     <div>
       <div className='container-layout p-3 pb-5'>
-        <Row className='about-row' >
+        <div className='row about-row' >
           <div  id='content-text' className='header-section col-sm-12 col-md-12 col-lg-8 order-1 order-sm-2'>
             <Header headerText='About Samantha Mann' />
             <br />
-            <Content contentText='For many years I suffered from a menstrual disorder called endometriosis. I tried to ignore it as best I could, managing it through a number of surgeries, hormone treatments and, eventually, constant heavy painkiller usage. Throughout this I managed to obtain a degree and PhD in psychology, and a subsequent 19-year career in research. However, it eventually got to the stage where pain and discomfort were unmanageable and I could not continue to ignore the problem. Doctors had told me they could only offer pain management and this was not working. I took matters into my own hands, did some research, and made substantial changes to my diet. I was very focused – pain is very motivating – and after just a couple of months my efforts paid off. I could not believe that a few basic changes to what I ate could make such a remarkable difference. Within another month I was not taking painkillers at all. Doctors had previously always told me I had the condition, they did not know why, but that I would have to just manage it medically. Not only had my symptoms vanished but I also felt so much more energetic and lost a fair bit of weight, quite incidentally. I had been carrying too much weight but previous attempts to lose it had been temporary.'/>
+            <Content contentText='For many years I suffered from a menstrual disorder called endometriosis. I tried to ignore it as best I could, managing it through a number of surgeries, hormone treatments and, eventually, constant heavy painkiller usage. Throughout this I managed to obtain a degree and PhD in psychology, and a subsequent 19-year career in research. However, it eventually got to the stage where pain and discomfort were unmanageable and I could not continue to ignore the problem. By then doctors had told me they could only offer pain management and this was not working. I took matters into my own hands, did some research, and made substantial changes to my diet. I was very focused – pain is very motivating – and after just a couple of months my efforts paid off. I could not believe that a few basic changes to what I ate could make such a remarkable difference. Within another month I was not taking painkillers at all. Doctors had previously always told me I had the condition, they did not know why, but that I would have to just manage it medically. Not only had my symptoms vanished but I also felt so much more energetic and lost a fair bit of weight, quite incidentally. I had been carrying too much weight but previous attempts to lose it had been temporary.'/>
             <br />
             <Content contentText='Before, I had always thought I ate healthily. I probably ate more vegetables than most people, tried to cut down on calories and fat. I thought I knew a lot about diet as I had always been interested in it. It turned out I knew very little really. There are many misconceptions out there, and of course as scientific discoveries are made, dietary advice changes. Also, the food industry is full of massive producers with all kinds of confusing marketing designed to convince us to eat food which is not the best for us.' />
             <br />
@@ -46,7 +45,7 @@ const About = () => (
               </a>
             </div>
           </div>
-        </Row>
+        </div>
         <div className='text-center p-5'>
           <p style={{fontSize:'calc(16px + 1.25vw)'}}><span style={{fontWeight:'700'}}>"Real Health Matters</span> now. Back to basics, back to nature, back to balance."</p>
         </div>
