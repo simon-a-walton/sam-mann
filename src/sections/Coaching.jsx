@@ -6,6 +6,7 @@ import Content from './../components/Content';
 import { css } from 'glamor';
 import { colors } from './../constants/StyleConstants';
 import happyWoman from './../images/happy-woman.jpg';
+import { coachingData, expertiseData } from './../data/coachingData';
 
 const coachingImage = css({
   paddingTop: '40px',
@@ -26,47 +27,37 @@ const Coaching = () => (
         <Header headerText='Health Coaching' />
           <div id='coaching-list'>
             <ul className='fa-ul cards-list'>
-              <li>
-                <span className={`fa-li ${css({ color: colors.green}) }`}>
-                  <i className='fas fa-carrot' />
-                </span>
-                <Content contentText="We all know what we 'should' be doing; drinking more water and less alcohol, taking more exercise and eating more vegetables and less sugar. However, the information can be confusing and hard to put into practice" />
-              </li>
-              <li>
-                <span className={`fa-li ${css({ color: colors.green}) }`}>
-                  <i className='fas fa-people-carry' />
-                </span>
-                <Content contentText='It helps to have a plan of action, unique to you and your circumstances. Health coaching acts as a guiding hand and provides you with a clear plan and dedicated support to help you follow that plan and get the results you want.' />
-              </li>
-              <li>
-                <span className={`fa-li ${css({ color: colors.green}) }`}>
-                  <i className='fas fa-heart' />
-                </span>
-                <Content contentText='Your health is worth investing your time in. To not do so is a false economy, even if much of your life is spent looking after others or working, you will not be able to give anybody else your best if you are not feeling your best.' />
-              </li>
+              {coachingData.map((data) => (
+                <li>
+                  <span className={`fa-li ${css({ color: colors.green})}`}>
+                    <i className={data.className} />
+                  </span>
+                  <Content contentText={data.content} />
+                </li>
+              ))}
             </ul>
-
-              <h3>Areas of Expertise</h3>
-              <div id='expertise'>
+            <h3>Areas of Expertise</h3>
+            <div id='expertise'>
               <ul className='cards-list fa-ul'>
+                {expertiseData.map((data) => (
                 <li>
-                  <span className={`fa-li ${css({ color: colors.green}) }`}>
-                    <i className='fas fa-check-circle' />
+                  <span className={`fa-li ${css({ color: colors.green})}`}>
+                    <i className={data.className} />
                   </span>
-                <Content contentText='Menstrual Disorders' />
+                  <Content contentText={data.content} />
                 </li>
-                <li>
-                  <span className={`fa-li ${css({ color: colors.green}) }`}>
-                    <i className='fas fa-check-circle' />
-                  </span>
-                  <Content contentText='Weight Management' />
-                </li>
+              ))}
               </ul>
             </div>
           </div>
       </div>
     </Col>
-    <Col className={`${hideImage} d-sm-none d-md-none d-lg-block d-xl-block`} sm='3' lg='6' align='center'>
+    <Col
+      className={`${hideImage} d-sm-none d-md-none d-lg-block d-xl-block`}
+      sm='3'
+      lg='6'
+      align='center'
+    >
       <img
         src={happyWoman}
         alt='Happy Woman'

@@ -8,6 +8,7 @@ import CardLayout from './../components/CardLayout';
 import { colors } from './../constants/StyleConstants';
 import { css } from 'glamor';
 import { hideImage } from './../sections/Coaching';
+import { workWithMeData } from './../data/workWithMeData';
 
 const coachImage = css({
   width: '50%'
@@ -31,7 +32,7 @@ class WorkWithMe extends React.Component {
     this.state = {
       isScrolled: false,
     };
-  }
+  };
 
   getClassName() {
     if (this.state.isScrolled) {
@@ -39,7 +40,7 @@ class WorkWithMe extends React.Component {
   } else {
       return null;
     }
-  }
+  };
 
   handleScroll = () => {
     const deckTop = document.getElementById('top-of-deck');
@@ -50,22 +51,9 @@ class WorkWithMe extends React.Component {
     } else {
       this.setState({ isScrolled: false });
     }
-  }
+  };
 
   render() {
-
-    const cardHeader = {
-      first: 'Free Consultation',
-      second: 'Bespoke Programme',
-      third: 'Weekly Sessions'
-    };
-
-    const cardText = {
-      first: 'We start the process by having an initial chat, either face-to-face or online, which will take roughly an hour. It is a confidential space to understand how you are getting stuck, where you want to get to and whether coaching is right for you at this time.',
-      second: 'You will be offered a bespoke programme designed around you over a period of three to six months depending on your individual needs.',
-      third: 'We will agree to meet weekly or biweekly at a regular time, either face to face, out in nature or online. '
-    };
-
     return (
       <div id='top-of-deck' className={`${css({ color: colors.darkPurple})} p-3 pb-5`}>
         <Row>
@@ -86,9 +74,9 @@ class WorkWithMe extends React.Component {
           </Col>
         </Row>
         <CardDeck className='py-5 mx-2'>
-          <CardLayout icon={`fas fa-phone + ${this.getClassName()}`} header={cardHeader.first} text={cardText.first} />
-          <CardLayout icon={`fas fa-calendar + ${this.getClassName()}`} header={cardHeader.second} text={cardText.second} />
-          <CardLayout icon={`fas fa-people-arrows + ${this.getClassName()}`} header={cardHeader.third} text={cardText.third} />
+          {workWithMeData.map((data) => (
+            <CardLayout icon={`fas ${data.icon} + ${this.getClassName()}`} header={data.header} text={data.text} />
+          ))}
         </CardDeck>
       </div>
     );

@@ -8,6 +8,7 @@ import { colors } from './../constants/StyleConstants';
 import { css } from 'glamor';
 import ContactContent from './../components/ContactContent';
 import ContactForm from './../components/ContactForm';
+import { contactData } from './../data/contactData';
 
 const Contact = () => (
 <>
@@ -17,30 +18,19 @@ const Contact = () => (
         <Header headerText='Contact' />
         <Content contentText='Want to find out more? Get in touch to arrange a free consultation today.' />
       </div>
-       <div className='header-section'>
+      <div className='header-section'>
         <ContactForm />
       </div>
-      <ul className='fa-ul list-unstyled contact-list' style={{fontSize:'calc(8px + 1vw)'}}>
-        <ContactContent
-          link='mailto:samantha@realhealthmatters.co.uk?subject=Enquiry from Website'
-          containerClassName='fas fa-envelope-open-text'
-        >
-          samantha@realhealthmatters.co.uk
-        </ContactContent>
-         <ContactContent
-          link='tel:07884404100'
-          containerClassName='fas fas fa-phone'
-        >
-          07884404100
-        </ContactContent>
-         <ContactContent
-          link='#contact'
-          containerClassName='fas fa-map-pin'
-        >
-          Liss, England, GU33 7HN
-        </ContactContent>
+      <ul className='fa-ul list-unstyled contact-list' {...css({fontSize:'calc(8px + 1vw)'})}>
+        {contactData.map((data) => (
+          <ContactContent
+            link={data.link}
+            containerClassName={data.className}
+          >
+            {data.content}
+          </ContactContent>
+        ))}
       </ul>
-
     </Col>
     <Col lg='4' align='center' className='py-5'>
       <Map />
