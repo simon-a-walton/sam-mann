@@ -18,7 +18,6 @@ const Footer = () => (
           Real Health Matters
         </p>
       </Col>
-
       <Col className='text-center footer-col'>
         <div className='footer-copyright'>
           <p {...footerFont}>
@@ -27,7 +26,6 @@ const Footer = () => (
           </p>
         </div>
       </Col>
-
       <Col className='text-right'>
         <ul className='list-unstyled social-media' style={{fontSize:'calc(12px + 1.5vw)'}}>
           <li>
