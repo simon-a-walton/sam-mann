@@ -3,17 +3,6 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { healthCoachingID, workWithMeID, aboutID, contactID } from './../constants/AppConstants';
 import { css } from 'glamor';
 
-const zoomEffect = css({
-  [`& :hover`]: {
-    transform: 'scale(1.05)'
-  }
-});
-
-
-const brandPadding = css({
-  paddingLeft: '8px'
-});
-
 class NavbarComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -41,8 +30,8 @@ class NavbarComponent extends React.Component {
     return (
       <header id='nav-bar' className={this.getClassName()}>
         <Navbar collapseOnSelect expand='lg'>
-          <Navbar {...zoomEffect}>
-            <Navbar.Brand {...brandPadding}  href='#top'>
+          <Navbar {...css({ [`& :hover`]: { transform: 'scale(1.05)' } })}>
+            <Navbar.Brand {...css({ paddingLeft: '8px' })} href='#top'>
               Real Health Matters
             </Navbar.Brand>
           </Navbar>
