@@ -9,8 +9,8 @@ import happyWoman from './../images/happy-woman.jpg';
 import { coachingData, expertiseData } from './../data/coachingData';
 
 const coachingImage = css({
-  paddingTop: '40px',
-  width: '80%'
+  paddingTop: '0px',
+  maxWidth: '50%'
 });
 
 export const hideImage = css({
@@ -57,6 +57,7 @@ const Coaching = () => (
       sm='3'
       lg='6'
       align='center'
+      {...css({ margin: 'auto' })}
     >
       <img
         src={happyWoman}
