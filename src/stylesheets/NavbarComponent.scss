@@ -1,6 +1,6 @@
 $dark-purple: #1d0461;
 $light-purple: #c0bbff;
-$purple: #796EFF;
+$purple: #734BBF;
 $green: #84DD7C;
 
 header {
@@ -14,9 +14,13 @@ header {
   padding: 0.5rem 0.5rem;
 }
 
-.navbar-brand {
-  font-size: calc(12px + 1.15vw);
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../images/Logo-06.png');
 }
+
+// .navbar-brand {
+//   font-size: calc(12px + 1.15vw);
+// }
 
 .nav-link {
   font-weight: 400;
@@ -79,6 +83,7 @@ header.green {
 .navbar-light .navbar-toggler {
   color: $dark-purple;
   border-color: $purple;
+  background: $purple;
 }
 
 ul#logo-name li {
@@ -130,6 +135,8 @@ ul#menu li {
     margin-right: 4px;
     font-size: 4px;
   }
+
+
 
   .navbar-light .navbar-nav .nav-link {
     font-size: 14px;

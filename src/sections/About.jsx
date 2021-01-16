@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './../components/Header';
 import Content from './../components/Content';
+import LogoLeaf from '../images/Logo-06.png';
+import { css } from 'glamor';
 
 const About = () => (
 <>
@@ -49,22 +51,29 @@ const About = () => (
         <div className='text-center p-5'>
           <p style={{fontSize:'calc(16px + 1.25vw)'}}><span style={{fontWeight:'700'}}>"Real Health Matters</span> now. Back to basics, back to nature, back to balance."</p>
         </div>
-        <div id='accreditation-logos-bottom'>
-              <a href='https://www.ukhealthcoaches.com/england/liss/health-coach/samantha-mann' rel='noopener noreferrer' target='_blank'>
-                <img
-                  className='ukhc-logo img-responsive'
-                  src='https://www.heruniqueglow.com/uploads/images/_560x560_crop_center-center_85/UK-Health-Coaches-Association-copy.png'
-                  alt='Health Coaches Association'
-                />
-              </a>
-              <a href='https://www.integrativenutrition.com/health-coaching' rel='noopener noreferrer' target='_blank'>
-                <img
-                  className='iin-logo img-responsive'
-                  src='https://images.youracclaim.com/images/3809dced-24e0-43ff-8350-5e697ee99012/HCTP_INHC_Badge.png'
-                  alt='Health Coaches Association'
-                />
-              </a>
-            </div>
+          <div id='accreditation-logos-bottom'>
+            <a href='https://www.ukhealthcoaches.com/england/liss/health-coach/samantha-mann' rel='noopener noreferrer' target='_blank'>
+              <img
+                className='ukhc-logo img-responsive'
+                src='https://www.heruniqueglow.com/uploads/images/_560x560_crop_center-center_85/UK-Health-Coaches-Association-copy.png'
+                alt='Health Coaches Association'
+              />
+            </a>
+            <a href='https://www.integrativenutrition.com/health-coaching' rel='noopener noreferrer' target='_blank'>
+              <img
+                className='iin-logo img-responsive'
+                src='https://images.youracclaim.com/images/3809dced-24e0-43ff-8350-5e697ee99012/HCTP_INHC_Badge.png'
+                alt='Health Coaches Association'
+              />
+            </a>
+        </div>
+        <div {...css({ display: 'flex', justifyContent: 'center' })}>
+          <img
+            src={LogoLeaf}
+            width={40}
+            height={'auto'}
+          />
+        </div>
       </div>
     </div>
   </div>

@@ -9,6 +9,7 @@ import { css } from 'glamor';
 import ContactContent from './../components/ContactContent';
 import ContactForm from './../components/ContactForm';
 import { contactData } from './../data/contactData';
+import LogoFull from '../images/Logo-04.png';
 
 const Contact = () => (
 <>
@@ -34,6 +35,13 @@ const Contact = () => (
     </Col>
     <Col lg='4' align='center' className='py-5'>
       <Map />
+      <img
+        src={LogoFull}
+        width={100}
+        height={'auto'}
+        {...css({ paddingTop: '60px'})}
+        alt='Logo'
+      />
     </Col>
   </Row>
 </>
